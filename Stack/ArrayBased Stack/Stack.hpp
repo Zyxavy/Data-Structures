@@ -20,6 +20,7 @@ class Stack {
         int peek(); //check top value
         bool isEmpty(); //check if stack is empty
         bool isFull(); //check if full
+        void print();//print the full stack
 };
 
 #endif
