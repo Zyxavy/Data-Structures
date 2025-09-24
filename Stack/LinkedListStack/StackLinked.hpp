@@ -19,6 +19,13 @@ class Stack
     {
         top = nullptr; // Initialize top to nullptr
     }
+    ~Stack() // Destructor
+    {
+        while(!isEmpty())
+        {
+            pop();
+        }
+    }
 
     //methods
     void push(int value); // Push an element onto the stack

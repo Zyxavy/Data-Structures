@@ -28,11 +28,11 @@ void Queue::dequeue()
 {
     if(isEmpty())
     {
-        printf("Queue is Empty, nothing to dequeue");
+       std::cout << "Queue is empty!";
         return;
     }
 
-    printf("%d, Dequeued.", front->data);
+    std::cout << front->data << ", Dequeued.";
 
     Node *tempNode = front; //create temporary node
     front = tempNode->next; //move the front
@@ -50,7 +50,7 @@ int Queue::peek()
 {
     if(isEmpty())
     {
-        printf("Queue is Empty, nothing to peek at");
+       std::cout << "Queue is empty!";
         return -1;
     }
 

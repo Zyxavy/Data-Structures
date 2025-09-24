@@ -21,6 +21,13 @@ class Queue
             front = nullptr;
             rear = nullptr;
         }
+        ~Queue() //destructor
+        {
+            while(!isEmpty())
+            {
+                dequeue();
+            }
+        }
     
     //methods
     void enqueue(int value);
