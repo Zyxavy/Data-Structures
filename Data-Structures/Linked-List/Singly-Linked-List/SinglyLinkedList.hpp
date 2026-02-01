@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-
-
 class Node 
 {
     public:
@@ -47,6 +45,8 @@ class LinkedList
         void pushRear(int value);
         Node* find(int value);
         bool deleteValue(int value);
+        void reverseList();
+        void reverseListRecurse(Node* current);
 };
 
 
